@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: #000;
+            }
+            .box{
+                width: 400px;
+                height: 400px;
+                margin: 10% auto;
+                text-align: center;
+            }
+        </style>
+        <script>
+                function clickMe(state){//state is a formal argument/parameter
+                //alert('ok');
+                
+                 if( state == 'on'){
+                    //True
+                    document.body.style.backgroundColor='#FFFF00';
+                    document.getElementById('myimg').setAttribute('src','img/bulb2.png')
+                
+                 }else{
+                    document.body.style.backgroundColor='#000';
+                    document.getElementById('myimg').setAttribute('src','img/bulb1.png')
+                 }//
+             
+             
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="box">
+            <img  id="myimg" width="200" src="img/bulb1.png" alt="">
+            <br>
+            <button onclick="clickMe('on')"> ON</button>
+            <button onclick="clickMe('off')" >OFF</button>
+        </div>
+        <script>
+
+        </script>
+    </body>
+</html>
